@@ -1,5 +1,6 @@
 const divResultat = document.querySelector("#resultat");
 
+
 //Ceci est un tableau multidimensionnel
 
 let tabJeu = [
@@ -40,7 +41,7 @@ function afficherTableau () {
             // Je mets une condition : si la valeur de mon éléments vaut 0 => alors t'affiche le bouton  
             if(tabJeu [i][j] === 0){                   
                 //cette fonction permet de verifier si c'est la meme valeur pour chaque clic si oui sa affiche les images sinon sa les retourne
-                txt +="<button class='btn btn-primary' onClick = 'verif(\""+i+"-"+j+"\")'>Afficher</button>";
+                txt +="<button class='btn btn-primary imageCartes' onClick = 'verif(\""+i+"-"+j+"\")'></button>";
             }
             // Sinon affiche une image
             else{
@@ -136,3 +137,4 @@ function genereTableauAleatoire(){
     }
     return tab;
 }
+
